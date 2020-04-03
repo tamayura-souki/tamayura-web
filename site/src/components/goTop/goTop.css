@@ -1,0 +1,28 @@
+#go-top-button {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  width: 100vw;
+
+  margin: 0px 0px;
+  padding: 3px;
+
+  color: transparent;
+  text-align: center;
+  text-decoration: none;
+
+  border: 0px;
+  background-color: transparent;
+
+  transition: 0.3s;
+}
+
+#go-top-button:focus {
+  outline: none;
+}
+
+#go-top-button:hover {
+  color: whitesmoke;
+  background-color :#2010f8;
+}

@@ -1,0 +1,19 @@
+{
+    "contentPageData" : [
+        {
+            "name" : "About",
+            "path" : "/content/About",
+            "description" : "珠響そうきについて"
+        },
+        {
+            "name" : "History",
+            "path" : "/content/History",
+            "description" : "珠響そうきの足あと"
+        },
+        {
+            "name" : "Works",
+            "path" : "/content/Works",
+            "description" : "お手製おもちゃ箱"
+        }
+    ]
+}

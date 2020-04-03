@@ -1,0 +1,35 @@
+#links {
+  max-width: 700px;
+  margin: 100px auto;
+}
+
+.linkCommon {
+  text-align: left;
+  padding: 1.5rem 2rem;
+  margin: 5px auto;
+
+  position:relative;
+  display: block;
+
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+.linkCommon:hover {
+  opacity: 0.8;
+  background-color: #2010f8;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.linkCommon .description {
+  width: 100%;
+
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+
+  color: whitesmoke;
+  font-size: large;
+}

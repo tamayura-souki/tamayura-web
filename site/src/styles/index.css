@@ -1,0 +1,13 @@
+#entranceText {
+  width: 100%;
+  max-width: 900px;
+  padding: 10px 40px;
+  margin: 50px auto;
+
+  text-align: left;
+}
+
+#entranceText p {
+  margin: auto;
+  padding: 3px 1rem;
+}
