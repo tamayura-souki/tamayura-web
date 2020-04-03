@@ -34,8 +34,7 @@ const IndexPage = () => {
 
       <div id="entranceText">
         <h1>ようこそ珠響そうきのwebサイトへ</h1>
-        <p>ここは情報系VTuber珠響そうきのwebサイトです。</p>
-        <p>ここは情報系VTuber珠響そうきのwebサイトです。</p>
+        <p>情報系VTuber珠響そうきについての情報をまとめてあります。</p>
       </div>
 
       <div id="links">
