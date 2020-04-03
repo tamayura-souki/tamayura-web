@@ -16,9 +16,6 @@ const Footer = ({poem}) => {
         {poem}
       </div>
 
-      <div id="links">
-      </div>
-
       <div id = "copyright">
         © {new Date().getFullYear()} tamayura-souki, Built with
         {` `}
