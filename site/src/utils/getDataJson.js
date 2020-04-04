@@ -18,6 +18,13 @@ const GetDataJson = key => {
               value
             }
           }
+          history {
+            date
+            date2
+            text
+            detail
+            link
+          }
         }
       }
     }
