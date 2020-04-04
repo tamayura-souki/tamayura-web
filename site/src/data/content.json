@@ -14,6 +14,11 @@
             "name" : "Works",
             "path" : "/content/Works",
             "description" : "お手製おもちゃ箱"
+        },
+        {
+            "name" : "Links",
+            "path" : "/content/Links",
+            "description" : "広がる世界"
         }
     ]
 }
