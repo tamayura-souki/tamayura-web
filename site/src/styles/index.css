@@ -11,3 +11,11 @@
   margin: auto;
   padding: 3px 1rem;
 }
+
+#welcome {
+  display: inline;
+}
+
+#entranceText:hover #welcome {
+  color:rgb(255,41,30);
+}
