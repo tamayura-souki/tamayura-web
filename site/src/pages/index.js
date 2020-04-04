@@ -37,8 +37,8 @@ const IndexPage = () => {
       bottomPoem="見つけてくれてありがとう"
     >
       <div id="entranceText">
-        <h1>ようこそ珠響そうきのwebサイトへ</h1>
-        <p>情報系VTuber珠響そうきについての情報をまとめてあります。</p>
+        <h1><div id="welcome">ようこそ</div>珠響そうきのwebサイトへ</h1>
+        <p>情報系VTuber珠響そうきについての情報、各種取り揃えております。</p>
       </div>
 
       <div id="links">{linkList}</div>
