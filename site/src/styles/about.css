@@ -1,0 +1,77 @@
+#charImage {
+  display: inline-block;
+  max-width: 400px;
+
+  width: 70%;
+  height: auto;
+
+  margin: 50px;
+  border: 5px double transparent;
+
+  filter: drop-shadow(0px 0px 1px);
+
+  transition: 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+#charImage:hover {
+  filter: drop-shadow(8px 0px 1px);
+  border: 5px double blue;
+}
+
+#charImage::after {
+  content: "";
+  filter: drop-shadow(0px 0px 2px);
+}
+
+#aboutTables * {
+  transition: 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+#aboutTables {
+  display: inline-block;
+  vertical-align: bottom;
+
+  width: 100%;
+  max-width: 300px;
+
+  margin: 10px 20px 50px;
+  text-align: center;
+}
+
+#aboutTables td {
+  margin: auto;
+  padding: 5px 5px;
+}
+
+#aboutTables .key {
+  text-align: right;
+}
+
+#aboutTables .sep {
+  text-align: center;
+  padding: 0px;
+}
+
+.aboutRow .detail {
+  color: transparent;
+  background-color: transparent;
+
+  position: absolute;
+  transform: translate(0, -100%);
+
+  transition: 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.aboutRow:hover .detail {
+  color: whitesmoke;
+  background-color: blue;
+
+  padding: 0px 8px;
+}
+
+.aboutRow:hover .value {
+  color: transparent;
+}

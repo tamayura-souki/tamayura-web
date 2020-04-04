@@ -1,0 +1,33 @@
+{
+    "about" : [
+        {
+            "caption" : "ステータス",
+            "table" : [
+                {"key" : "名前", "value" : "珠響 そうき"},
+                {"key" : "name", "value" : "Tamayura Souki"},
+                {"key" : "年齢", "value" : "永遠の18歳児"},
+                {"key" : "種族", "value" : "ホムンクルス", "detail" : "自分の体を人体錬成"},
+                {"key" : "出身", "value" : "魔術世界", "detail" : "魔術世界から仮想世界へSSH"},
+                {"key" : "声帯", "value" : "error", "detail" : "もっていかれた!?"}
+            ]
+        },
+        {
+            "caption" : "ホビー",
+            "table" : [
+                {"key" : "minecraft", "value" : "好き", "detail" : "キト鯖に秘密基地をつくる"},
+                {"key" : "麻雀", "value" : "ルールは分かる"},
+                {"key" : "雪山", "value" : "やってた", "detail" : "いつでもお誘いくださいまし"},
+                {"key" : "MHW", "value" : "一狩り飽きてる", "detail" : "dual blades"},
+                {"key" : "東方紅魔郷", "value" : "normal shooter", "detail" : "extra ができてないのでいつかやりたい"},
+                {"key" : "switch", "value" : "分岐処理の構文", "detail" : "ゲーム機ないんだよ。悪いか"}
+            ]
+        },
+        {
+            "caption" : "スキル",
+            "table" : [
+                {"key" : "プログラミング", "value" : "趣味プログラマ", "detail" : "python, pytorch, このサイトは Gatsby"},
+                {"key" : "人体錬成", "value" : "5体くらい作った", "detail" : "お絵かき, live2d, vroid"}
+            ]
+        }
+    ]
+}

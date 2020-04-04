@@ -25,7 +25,7 @@ class GoTop extends Component {
     var isTop = Math.max(
         window.pageYOffset,
         document.documentElement.scrollTop,
-        document.body.scrollTop) == 0;
+        document.body.scrollTop) === 0;
 
     var changedText = isTop ? this.isTopSent : this.isNotTopSent;
 

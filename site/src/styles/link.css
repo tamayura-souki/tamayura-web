@@ -3,36 +3,41 @@
   margin: 100px auto;
 }
 
-.linkCommon {
+.linkBox {
   text-align: left;
   padding: 1.2rem 1.5rem;
   margin: 10px 50px;
 
-  position:relative;
+  position: relative;
   display: block;
 
   font-size: xx-large;
   text-decoration: none;
 
   transition: 0.3s;
-  -webkit-transition: all .3s;
+  -webkit-transition: all 0.3s;
+}
+
+.linkCommon {
+  text-decoration: none;
 }
 
 .linkCommon * {
   transition: 0.3s;
-  -webkit-transition: all .3s;
+  -webkit-transition: all 0.3s;
 }
 
 .linkCommon.linkCommon:hover .name {
-  text-shadow: 0px 0px 5px rgb(255,41,30);
+  text-shadow: 0px 0px 5px rgb(255, 41, 30);
   opacity: 0.8;
   color: transparent;
 }
 
-.linkCommon:hover {
-  border-radius: 3px;
-  background-color :#2010f8;
-  opacity: 0.8;
+.linkCommon:hover .linkBox {
+  border-radius: 2px;
+  background-color: #2010f8;
+  opacity: 0.9;
+  margin: 10px 80px;
 }
 
 .linkCommon .description {
@@ -51,6 +56,6 @@
   color: #2010f8;
 }
 
-.linkCommon:hover .description{
+.linkCommon:hover .description {
   color: whitesmoke;
 }
