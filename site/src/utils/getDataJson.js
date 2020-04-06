@@ -25,6 +25,16 @@ const GetDataJson = key => {
             detail
             link
           }
+          works {
+            caption
+            detail
+            contents {
+              name
+              link
+              description
+              image
+            }
+          }
         }
       }
     }
