@@ -35,6 +35,15 @@ const GetDataJson = key => {
               image
             }
           }
+          links {
+            caption
+            description
+            linkList {
+              name
+              detail
+              link
+            }
+          }
         }
       }
     }

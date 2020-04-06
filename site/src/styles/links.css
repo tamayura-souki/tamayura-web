@@ -1,0 +1,68 @@
+#linksPage {
+  max-width: 700px;
+  margin: 90px auto;
+  padding: 0px 50px;
+}
+
+#linksPage * {
+  text-decoration: none;
+
+  transition: 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.linkItem a {
+  padding: 1.2rem 2.0rem;
+
+}
+
+.linkItem {
+  position: relative;
+  border-radius: 5px;
+
+  margin: 10px 40px;
+
+
+  background-color: #2010f8;
+
+  border: 1px solid transparent;
+}
+
+.linkItem .name {
+  font-size: xx-large;
+
+  color: whitesmoke;
+
+  position: relative;
+  left: 0%;
+}
+
+.linkItem .detail {
+  width: 100%;
+
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  right: 40%;
+
+  font-size: large;
+
+  color: transparent;
+}
+
+.linkItem:hover {
+  margin: 10px 0px;
+  background-color: whitesmoke;
+  border: 1px solid;
+}
+
+.linkItem:hover .name {
+  position: relative;
+  left: -25%;
+  color: #2010f8;
+}
+
+.linkItem:hover .detail{
+  right: 10%;
+  color: #2010f8;
+}
