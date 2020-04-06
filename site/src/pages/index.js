@@ -9,8 +9,8 @@ import "../styles/link.css"
 
 const LinkElement = props => {
   return (
-    <Link to={props.linkPath} className="linkCommon" id={"link" + props.i}>
-      <div className="linkBox">
+    <Link to={props.linkPath} className="linkBox"  id={"link" + props.i}>
+      <div className="linkCommon">
         <div className="name">{props.linkName}</div>
         <div className="description">~{props.linkDescription}~</div>
       </div>
