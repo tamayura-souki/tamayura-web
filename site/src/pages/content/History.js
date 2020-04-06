@@ -9,15 +9,21 @@ const historyRow = (props, i) => {
   var date = props.date
   if (props.date2) date = (<>{date} ~ <br/> {props.date2} </>)
 
+  var text = (
+    <>
+      <div className="text">{props.text}</div>
+      <div className="detail">{props.detail}</div>
+    </>
+  )
+
+  if(props.link) {
+    text = (<a href={props.link}>{text}</a>)
+  }
+
   return (
     <tr className="historyRow" key={"historyRow" + i}>
       <td className="date">{date}</td>
-      <td>
-        <a href={props.link}>
-          <div className="text">{props.text}</div>
-          <div className="detail">{props.detail}</div>
-        </a>
-      </td>
+      <td>{text}</td>
     </tr>
   )
 }
