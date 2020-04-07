@@ -1,11 +1,6 @@
-import { Link } from "gatsby"
 import React from "react"
 
 import "./footer.css"
-
-const LinkList = prop => {
-
-}
 
 const Footer = ({poem}) => {
 

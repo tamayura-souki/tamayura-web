@@ -1,7 +1,6 @@
 import React from "react"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout title="404: Not found" topPoem="戻ったほうがいい" bottomPoem="こんな所まで来やがって">
