@@ -1,0 +1,56 @@
+{
+    "works" : [
+        {
+            "caption" : "Python Apps",
+            "detail" : "Python で作ったちょっとしたアプリ",
+            "contents" : [
+                {"name" : "ChatPlayer", "link" : "https://github.com/tamayura-souki/ChatPlayer", "description": "コメント流れる。コマンドもある。", "image": ""},
+                {"name" : "TopicBoxForStream", "link":"https://github.com/tamayura-souki/TopicBoxForStream", "description" : "配信中にコメ欄で投票できるやつ。", "image" : ""}
+            ]
+        },
+        {
+            "caption" : "Deep Learning",
+            "detail" : "pytorch で遊ぶ",
+            "contents" : [
+                {"name" : "ヤジが飛んでくるマインクラフト", "link" : "https://qiita.com/eteeeeeerminal/items/428f0618c775da816519", "description": "ボッチでも寂しくないマイクラ", "image": ""},
+                {"name" : "DarkHistoryMaker", "link":"https://youtu.be/qiqPumcfLTA", "description" : "黒歴史文書を生成してみた", "image" : ""}
+            ]
+        },
+        {
+            "caption" : "Web",
+            "detail" : "webサイト等",
+            "contents" : [
+                {"name" : "tamayura_web(ver1)", "link" : "https://tamayura-souki.github.io/tamayura.web/", "description" : "プレーンなサイト", "image": ""},
+                {"name" : "tamayura_web(ver2)", "link" : "", "description" : "ここ。GatsbyJS", "image" : ""},
+                {"name" : "VTuber99Questions", "link" : "https://tamayura-souki.github.io/VTuber99Questions/site/", "description" : "耐久配信用に作ったやつ", "image" : ""}
+            ]
+        },
+        {
+            "caption" : "Avatars",
+            "detail" : "人体錬成",
+            "contents" : [
+                {"name" : "Avatar1", "link" : "", "description" : "Live2Dで錬成したはじまりの体", "image" : "avatar1.png"},
+                {"name" : "Avatar2", "link" : "", "description" : "Vroidで錬成した2体目の体", "image": "avatar2.png"},
+                {"name" : "Avatar3", "link" : "", "description" : "Live2Dで錬成した新しいそうきちゃん", "image" : "avatar3.png"},
+                {"name" : "Avatar4", "link" : "", "description" : "Vroidで錬成した最新バージョンの体", "image" : "avatar4.png"},
+                {"name" : "珠響すいこ", "link" : "", "description" : "期間限定モデル", "image" : "suiko.png"}
+            ]
+        },
+        {
+            "caption" : "その他",
+            "detail" : "カテゴリ分けできなかった",
+            "contents" : [
+                {"name" : "魔法陣", "link" : "", "description" : "いつものやつ", "image": "magic.png"},
+                {"name" : "ロゴ", "link" : "", "description" : "シンプルにできた", "image" : "logo_s.png"}
+            ]
+        },
+        {
+            "caption" : "素材",
+            "detail" : "Twitterとかで使っていいやつ",
+            "contents" : [
+                {"name" : "", "link" : "", "description" : "", "image": "void.png"},
+                {"name" : "", "link" : "", "description" : "", "image" : "hard.png"}
+            ]
+        }
+    ]
+}

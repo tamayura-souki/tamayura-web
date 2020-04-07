@@ -8,13 +8,24 @@ import "../../styles/works.css"
 
 const worksList = props => {
   const worksItems = props.contents.map((data, i) => {
-    var image = (<div className="worksImage"><Image filename={data.image}/></div>);
+    var back = (data.image) ? (<Image filename={data.image}/>)
+                            : (<><h2>{data.name}</h2><p>{data.description}</p></>);
+
+    var float = (data.name) ? (<><h2>{data.name}</h2><p>{data.description}</p></>)
+                            : (<>{back}</>);
+
+    back = (
+      <div className="worksBack">{back}</div>
+    )
+
+    float = (
+      <div className="worksFloat">{float}</div>
+    )
 
     var item = (
       <>
-        {image}
-        <h2>{data.name}</h2>
-        <p>{data.description}</p>
+        {back}
+        {float}
       </>
     )
 
