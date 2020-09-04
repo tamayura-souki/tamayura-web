@@ -18,15 +18,15 @@
                 {"key" : "麻雀", "value" : "ルールは分かる", "detail": "ツモ 緑一色 です。"},
                 {"key" : "雪山", "value" : "やってた", "detail" : "いつでもお誘いくださいまし"},
                 {"key" : "MHW", "value" : "一狩り飽きてる", "detail" : "dual blades"},
-                {"key" : "東方紅魔郷", "value" : "normal shooter", "detail" : "extra ができてないのでいつかやりたい"},
-                {"key" : "switch", "value" : "分岐処理の構文", "detail" : "ゲーム機ないんだよ。悪いか"}
+                {"key" : "東方紅魔郷", "value" : "normal shooter", "detail" : "いつか extra"},
+                {"key" : "apex", "value" : "大体ゴールド", "detail" : "グラップルしか信じられない"}
             ]
         },
         {
             "caption" : "スキル",
             "table" : [
                 {"key" : "プログラミング", "value" : "趣味プログラマ", "detail" : "python, pytorch, このサイトは Gatsby"},
-                {"key" : "人体錬成", "value" : "5体くらい作った", "detail" : "お絵かき, live2d, vroid"}
+                {"key" : "人体錬成", "value" : "5体くらい作った", "detail" : "live2d, vroid"}
             ]
         }
     ]
