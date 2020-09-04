@@ -32,8 +32,9 @@
                 {"name" : "Avatar1", "link" : "", "description" : "Live2Dで錬成したはじまりの体", "image" : "avatar1.png"},
                 {"name" : "Avatar2", "link" : "", "description" : "Vroidで錬成した2体目の体", "image": "avatar2.png"},
                 {"name" : "Avatar3", "link" : "", "description" : "Live2Dで錬成した新しいそうきちゃん", "image" : "avatar3.png"},
-                {"name" : "Avatar4", "link" : "", "description" : "Vroidで錬成した最新バージョンの体", "image" : "avatar4.png"},
-                {"name" : "珠響すいこ", "link" : "", "description" : "期間限定モデル", "image" : "suiko.png"}
+                {"name" : "Avatar4", "link" : "https://hub.vroid.com/characters/7198604267677814568/models/8595257850741979184", "description" : "Vroidで錬成した。配布有り", "image" : "avatar4.png"},
+                {"name" : "珠響すいこ", "link" : "", "description" : "何者？", "image" : "suiko.png"},
+                {"name" : "Avatar5", "link" : "", "description" : "Live2Dでごにょごにょ", "image" : "avatar5.png"}
             ]
         },
         {
@@ -42,14 +43,6 @@
             "contents" : [
                 {"name" : "魔法陣", "link" : "", "description" : "いつものやつ", "image": "magic.png"},
                 {"name" : "ロゴ", "link" : "", "description" : "シンプルにできた", "image" : "logo_s.png"}
-            ]
-        },
-        {
-            "caption" : "素材",
-            "detail" : "Twitterとかで使っていいやつ",
-            "contents" : [
-                {"name" : "", "link" : "", "description" : "", "image": "void.png"},
-                {"name" : "", "link" : "", "description" : "", "image" : "hard.png"}
             ]
         }
     ]

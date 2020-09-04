@@ -35,6 +35,9 @@ const GetDataJson = key => {
               image
             }
           }
+          stamps {
+            path
+          }
           links {
             caption
             description
