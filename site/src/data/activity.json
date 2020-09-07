@@ -1,0 +1,22 @@
+{
+    "activity" : [
+        {
+            "image" : "Activity/InterruptRadio1.png",
+            "title" : "InterruptRadio1",
+            "description" : "あなたの日常にインタラプト(割り込み)する、技術系ラジオ配信。",
+            "link" : "https://www.youtube.com/playlist?list=PLa0uhE20akZBUocUTGi7A1YzCGvn3YlPe"
+        },
+        {
+            "image" : "Activity/KKK1.png",
+            "title" : "KusoKoudoKaigi",
+            "description" : "みんなで楽しむプログラミング系配信。別名コード大喜利。",
+            "link" : "https://www.youtube.com/playlist?list=PLa0uhE20akZBaO38mz1ZeSHNPAFXlu9vy"
+        },
+        {
+            "image" : "Activity/技術系Vに聞いてみた.png",
+            "title" : "技術系Vに聞いてみた",
+            "description" : "GWをフルに使って、色んな技術系Vのお話を聞いてみよう！！",
+            "link" : "https://www.youtube.com/playlist?list=PLa0uhE20akZBvAqCSwAKsNEK13188whkM"
+        }
+    ]
+}

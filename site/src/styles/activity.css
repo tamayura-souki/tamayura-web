@@ -1,0 +1,29 @@
+.activityCard {
+  background-color: ivory;
+
+  width: 32rem;
+  height: 32rem;
+
+  padding:0px;
+  margin: 30px auto;
+
+  border: 1px solid slategray;
+  filter: drop-shadow(3px 3px 1px gray)
+}
+
+.activityCard * {
+  text-decoration: none;
+  text-align: left;
+}
+
+.activityTitle {
+  margin: 7px 15px 7px 15px;
+}
+
+.activityP {
+  margin: 10px;
+}
+
+.activityCaption {
+  margin: 4rem;
+}

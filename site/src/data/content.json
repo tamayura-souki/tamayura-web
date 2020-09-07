@@ -21,6 +21,11 @@
             "description" : "刹那の気持ち"
         },
         {
+            "name" : "Activity",
+            "path" : "/content/Activity",
+            "description" : "活動記録"
+        },
+        {
             "name" : "Links",
             "path" : "/content/Links",
             "description" : "広がる世界"

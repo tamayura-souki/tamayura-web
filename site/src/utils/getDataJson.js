@@ -38,6 +38,12 @@ const GetDataJson = key => {
           stamps {
             path
           }
+          activity {
+            image
+            title
+            description
+            link
+          }
           links {
             caption
             description
