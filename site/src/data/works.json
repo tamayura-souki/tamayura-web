@@ -22,7 +22,9 @@
             "contents" : [
                 {"name" : "tamayura_web(ver1)", "link" : "https://tamayura-souki.github.io/tamayura.web/", "description" : "プレーンなサイト", "image": ""},
                 {"name" : "tamayura_web(ver2)", "link" : "", "description" : "ここ。GatsbyJS", "image" : ""},
-                {"name" : "VTuber99Questions", "link" : "https://tamayura-souki.github.io/VTuber99Questions/site/", "description" : "耐久配信用に作ったやつ", "image" : ""}
+                {"name" : "VTuber99Questions", "link" : "https://tamayura-souki.github.io/VTuber99Questions/site/", "description" : "耐久配信用に作ったやつ", "image" : ""},
+                {"name" : "配信画面のやつ", "link" : "https://github.com/tamayura-souki/tamayuraForLive", "description" : "タイトルとか、背景とか", "image" : ""},
+                {"name" : "InterruptWords", "link" : "https://github.com/tamayura-souki/interrupt-word-ranking", "description" : "firebase+reactゴリ押しマン", "image" : ""}
             ]
         },
         {
