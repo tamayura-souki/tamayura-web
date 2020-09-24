@@ -41,9 +41,9 @@ const DarkPage = () => {
           <Image filename="magic.png"/>
         </div>
         <div className="magicFront">
-          <Link to="404">
+          <a href="https://immortality-web.netlify.app/">
             <Image filename="icon.png" className="magicFront"/>
-          </Link>
+          </a>
         </div>
       </div>
       <p className="poemJp">
