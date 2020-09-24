@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 import "./footer.css"
@@ -8,7 +9,9 @@ const Footer = ({poem}) => {
     <footer>
 
       <div id="poem">
-        {poem}
+        <Link to="Dark">
+          {poem}
+        </Link>
       </div>
 
       <div id = "copyright">
