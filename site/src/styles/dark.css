@@ -6,6 +6,10 @@
   color: white;
 }
 
+.dark #poem a {
+  color: white;
+}
+
 .dark p {
   margin: 50px;
   line-height: 200%;
