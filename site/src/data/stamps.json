@@ -8,6 +8,11 @@
         {"path":"Stamps/fall.png"},
         {"path":"Stamps/prayinglife.png"},
         {"path":"Stamps/silence.png"},
-        {"path":"Stamps/sleeping.png"}
+        {"path":"Stamps/sleeping.png"},
+        {"path":"Stamps/meltime.png"},
+        {"path":"Stamps/fuki.png"},
+        {"path":"Stamps/bracket.png"},
+        {"path":"Stamps/fullspace.png"},
+        {"path":"Stamps/progress.png"}
     ]
 }
