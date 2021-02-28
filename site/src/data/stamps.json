@@ -13,6 +13,11 @@
         {"path":"Stamps/fuki.png"},
         {"path":"Stamps/bracket.png"},
         {"path":"Stamps/fullspace.png"},
-        {"path":"Stamps/progress.png"}
+        {"path":"Stamps/progress.png"},
+        {"path":"Stamps/shutup.png"},
+        {"path":"Stamps/ha.png"},
+        {"path":"Stamps/loveyou.png"},
+        {"path":"Stamps/finished.png"},
+        {"path":"Stamps/niowase.png"}
     ]
 }
