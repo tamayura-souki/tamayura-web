@@ -11,17 +11,20 @@ class GoTop extends Component {
       this.state = {
         text : this.isTopSent
       };
+      this._isMounted = false
   }
 
   componentDidMount() {
+      this._isMounted = true
       window.addEventListener('scroll', event => this.checkIsTop(), true);
   }
 
   componentWillUnmount() {
+      this._isMounted = false
       window.removeEventListener('scroll', event => this.checkIsTop());
   }
 
-  checkIsTop() {
+  async checkIsTop() {
     var isTop = Math.max(
         window.pageYOffset,
         document.documentElement.scrollTop,
@@ -29,7 +32,7 @@ class GoTop extends Component {
 
     var changedText = isTop ? this.isTopSent : this.isNotTopSent;
 
-    this.setState({
+    this._isMounted && this.setState({
       text : changedText
     });
   }
