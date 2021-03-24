@@ -1,10 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 
-// コードのコピペ元: https://takumon.com/simple-gatsby-image-wrapper
+// 参考: https://takumon.com/simple-gatsby-image-wrapper
 // 画像ファイルパスをプロパティに取るようなコンポーネントを定義
-export default ({ filename }) => (
+const Image = ({ filename }) => (
 
   // ページじゃないコンポーネントでもGraphQLが使えるように
   // StaticQueryタグを使う
@@ -19,9 +19,7 @@ export default ({ filename }) => (
               relativePath
               name
               childImageSharp {
-                sizes {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(placeholder: BLURRED)
               }
             }
           }
@@ -34,15 +32,17 @@ export default ({ filename }) => (
 
       // 指定した画像ファイルパス（コンポーネントのプロパティ）と
       // 一致するgatsby-image用の情報を取得
-      const image = data.images.edges.find(n => {
+      const image_data = data.images.edges.find(n => {
         return n.node.relativePath.includes(filename)
       })
 
-      if (!image) return
 
-      // Imgタグでgatsby-imageで最適化された画像を表示する
-      const imageSizes = image.node.childImageSharp.sizes
-      return <Img　sizes={imageSizes} />
+      if (!image_data) return
+      const image = getImage(image_data.node)
+      if (!image) return
+      return <GatsbyImage image={image} alt="lost" />
     }}
   />
 )
+
+export default Image
