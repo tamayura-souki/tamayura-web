@@ -32,7 +32,7 @@ const HistoryPage = () => {
   const historyTable = GetDataJson("history").map((data, i) => historyRow(data, i)).reverse()
 
   return (
-    <Layout title="History" topPoem="昔のこと" bottomPoem="遠くまできたね">
+    <Layout title="History" topPoem="これまでのこと" bottomPoem="遠くまできたね">
       <table id="historyTable">
         <tbody>
           {historyTable}

@@ -4,7 +4,6 @@ import Layout from "../components/layout/layout"
 import Image from "../components/image"
 
 import "../styles/dark.css"
-import { Link } from "gatsby"
 
 const DarkPage = () => {
   return (
