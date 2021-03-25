@@ -15,7 +15,10 @@ const Image = ({ filename }) => {
               relativePath
               name
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED)
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO]
+                )
               }
             }
           }
