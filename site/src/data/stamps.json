@@ -1,5 +1,6 @@
 {
     "stamps" : [
+        {"path": "Stamps/happy.png"},
         {"path":"Stamps/void.png"},
         {"path":"Stamps/hard.png"},
         {"path":"Stamps/Icanflyday.png"},
@@ -18,6 +19,8 @@
         {"path":"Stamps/ha.png"},
         {"path":"Stamps/loveyou.png"},
         {"path":"Stamps/finished.png"},
-        {"path":"Stamps/niowase.png"}
+        {"path":"Stamps/niowase.png"},
+        {"path":"Stamps/oxygen.png"},
+        {"path":"Stamps/praytime.png"}
     ]
 }
