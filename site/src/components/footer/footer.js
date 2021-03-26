@@ -9,7 +9,7 @@ const Footer = ({poem}) => {
     <footer>
 
       <div id="poem">
-        <Link to="Dark">
+        <Link to="/Dark">
           {poem}
         </Link>
       </div>
