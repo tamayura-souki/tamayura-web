@@ -23,6 +23,7 @@ const WorksPage = () => {
     <Layout title="Stamps" topPoem="SNS等で" bottomPoem="お好きにどうぞ">
       <p>Twitter などで雑に使ってやってください。</p>
       <p>あくまで、スタンプ用途にのみご使用ください。</p>
+      <p><a href="https://tamayura-souki.booth.pm/items/2845876">Boothでも配布中</a></p>
       <div id="stampslist">{stampsLists}</div>
     </Layout>
   )
