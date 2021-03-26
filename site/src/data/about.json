@@ -24,8 +24,11 @@
         {
             "caption" : "スキル",
             "table" : [
-                {"key" : "プログラミング", "value" : "趣味プログラマ", "detail" : "python, pytorch, このサイトは Gatsby"},
-                {"key" : "人体錬成", "value" : "5体くらい作った", "detail" : "live2d, vroid"}
+                {"key" : "Programming[0]", "value" : "趣味プログラマ", "detail" : "just for fun"},
+                {"key" : "Programming[1]", "value" : "Python", "detail" : "DeepLearningを少々"},
+                {"key" : "Programming[2]", "value" : "Rust", "detail" : "最近楽しい"},
+                {"key" : "Programming[3]", "value" : "Web系", "detail" : "このサイトを作れる程度"},
+                {"key" : "人体錬成", "value" : "6体くらい", "detail" : "live2d, vroid"}
             ]
         }
     ]
