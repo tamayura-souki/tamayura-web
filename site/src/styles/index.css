@@ -12,10 +12,25 @@
   padding: 3px 1rem;
 }
 
-#welcome {
+#bracket {
+  font-size: larger;
   display: inline;
 }
 
-#entranceText:hover #welcome {
+#fun {
+  display: inline;
+}
+
+#prefix {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#postfix {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#entranceText:hover #fun {
   color:rgb(255,41,30);
 }

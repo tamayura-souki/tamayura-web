@@ -37,8 +37,18 @@ const IndexPage = () => {
       bottomPoem="見つけてくれてありがとう"
     >
       <div id="entranceText">
-        <h1><div id="welcome">ようこそ</div>珠響そうきのwebサイトへ</h1>
-        <p>情報系VTuber珠響そうきについての情報、各種取り揃えております。</p>
+        <h1>
+          <p id="prefix">
+          Programming <br/>
+          Studying
+          </p>
+          <p id="postfix">
+            <div id="bracket"> > </div>
+            just for <div id="fun">fun</div>
+          </p>
+        </h1>
+        <p>勉強を楽しく共有したい。情報系Vtuberの珠響そうきのwebサイトです。</p>
+        <p>珠響そうきについての情報、各種取り揃えています。</p>
       </div>
 
       <div id="links">{linkList}</div>
@@ -47,5 +57,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-// darker へのリンクだけどっかに隠しリンク作る
