@@ -15,7 +15,7 @@ const Footer = ({poem}) => {
       </div>
 
       <div id = "copyright">
-        © {new Date().getFullYear()} {` `}
+        © 2020 {` `}
         <a href="https://twitter.com/tamayurasouki">tamayura-souki</a>, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>,
