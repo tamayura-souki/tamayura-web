@@ -42,10 +42,10 @@ const IndexPage = () => {
           Programming <br/>
           Studying
           </p>
-          <p id="postfix">
+          <div id="postfix">
             <div id="bracket"> > </div>
             just for <div id="fun">fun</div>
-          </p>
+          </div>
         </h1>
         <p>勉強を楽しく共有したい。情報系Vtuberの珠響そうきのwebサイトです。</p>
         <p>珠響そうきについての情報、各種取り揃えています。</p>
