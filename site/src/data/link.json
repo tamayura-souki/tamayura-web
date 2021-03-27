@@ -27,7 +27,8 @@
             "linkList" : [
                 {"name" : "Twitter", "detail" : "つれづれ", "link" : "https://twitter.com/eteeeeeerminal"},
                 {"name" : "GitHub", "detail" : "ターンっ!", "link" : "https://github.com/eteeeeeerminal"},
-                {"name" : "Qiita", "detail" : "生地", "link" : "https://qiita.com/eteeeeeerminal"}
+                {"name" : "Qiita", "detail" : "生地", "link" : "https://qiita.com/eteeeeeerminal"},
+                {"name" : "Zenn", "detail" : "生地2", "link" : "https://zenn.dev/etrnl_tamayura"}
             ]
         }
     ]
