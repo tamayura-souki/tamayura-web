@@ -1,21 +1,90 @@
+#worksLists {
+  max-width: 800px;
+  width: 80%;
+  margin: 0px auto 0px;
+  padding: 0px;
+}
+
 .worksList * {
   text-decoration: none;
 }
 
 .worksList {
-  max-width: 1200px;
-
-  margin: 100px auto 120px;
-  padding: 10px 50px 30px;
+  width: 100%;
+  text-align: left;
+  margin: 15px 0px 70px 0px;
 }
 
-.worksItem {
+.worksList h1 {
+  margin: 0px;
+}
+
+.worksList p {
+  margin: 10px 2rem;
+}
+
+.items {
+  width: 100%;
+  margin: 0px 0px 0px 2rem;
+  padding: 0px;
+}
+
+.hasLink {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 8px;
+  color: #2010f8;
+
+  font-size: small;
+  font-family: serif;
+  padding: 0px 6px;
+  border:solid 1px;
+  border-radius: 50px;
+}
+
+.hasDist {
+  position: absolute;
+  bottom: 2.4rem;
+  right: 8px;
+  color: red;
+
+  font-size: small;
+  font-family: serif;
+  padding: 0px 6px;
+  border:solid 1px;
+  border-radius: 50px;
+}
+
+.noImage {
+  position: relative;
+  margin: 0px;
+  padding: 10px 5px;
+  border: 1px solid transparent;
+}
+
+.noImage:hover {
+  border: 1px solid;
+  filter: drop-shadow(5px 5px 5px gray)
+}
+
+.hasImage h3 {
+  margin: 50px 15px 10px;
+  filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+
+.hasImage p {
+  margin: 20px 8px;
+  font-weight: bold;
+}
+
+.hasImage {
   vertical-align: bottom;
 
-  width: 18rem;
-  height: 18rem;
+  width: 14.5rem;
+  height: 14.5rem;
 
-  margin: 10px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
 
   display: inline-block;
   position: relative;
@@ -26,36 +95,20 @@
   filter: drop-shadow(3px 3px 1px transparent)
 }
 
-.worksItem:hover {
+.hasImage:hover {
   border: 1px solid;
   filter: drop-shadow(3px 3px 1px gray)
 }
 
-.worksItem h2 {
-  margin: 50px 0px 10px;
-  filter: drop-shadow(0px 0px 2px whitesmoke);
-}
-
-.worksItem p {
-  margin: 20px 5px;
-  font-weight: bold;
-}
-
-.worksItem a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-.worksItem .worksFloat {
+.hasImage .imageFront {
   opacity: 0;
 }
 
-.worksItem:hover .worksFloat {
+.hasImage:hover .imageFront {
   opacity: 1;
 }
 
-.worksBack {
+.backImage {
   width: 96%;
 
   position: absolute;
@@ -66,7 +119,7 @@
   opacity: 1;
 }
 
-.worksItem:hover .worksBack {
+.hasImage:hover .backImage {
   filter: blur(5px);
   opacity: 0.1;
 }

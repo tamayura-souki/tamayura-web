@@ -6,35 +6,39 @@ import Image from "../../components/image"
 
 import "../../styles/works.css"
 
-const worksList = props => {
+const forImage = props => {
+  var back = <Image filename={props.image}/>
+  var front = (props.name) ? (<><h3>{props.name}</h3><p>{props.description}</p></>) : (<>{back}</>);
+  return (
+    <>
+      <div className="backImage">{back}</div>
+      <div className="imageFront">{front}</div>
+    </>
+  )
+}
+
+const notImage = props => {
+  return (
+    <>
+      <h3>{props.name}</h3>
+      <p>{props.description}</p>
+    </>
+  )
+}
+
+const worksList = (props, i) => {
   const worksItems = props.contents.map((data, i) => {
-    var back = (data.image) ? (<Image filename={data.image}/>)
-                            : (<><h2>{data.name}</h2><p>{data.description}</p></>);
-
-    var float = (data.name) ? (<><h2>{data.name}</h2><p>{data.description}</p></>)
-                            : (<>{back}</>);
-
-    back = (
-      <div className="worksBack">{back}</div>
-    )
-
-    float = (
-      <div className="worksFloat">{float}</div>
-    )
-
-    var item = (
-      <>
-        {back}
-        {float}
-      </>
-    )
+    var itemType = data.image ? "hasImage":"noImage"
+    var item = data.image ? forImage(data) : notImage(data)
 
     if(data.link) {
-      item = (<a href={data.link}>{item}</a>)
+      item = <>{item}<a href={data.link}><div className="hasLink">Link</div>{
+        data.has_dist && <div className="hasDist">配布</div>
+      }</a></>
     }
 
     return (
-      <div className="worksItem" key={"worksItem"+i}>
+      <div className={itemType} key={"worksItem"+i}>
         {item}
       </div>
     )
@@ -44,14 +48,14 @@ const worksList = props => {
     <div className="worksList">
       <h1>{props.caption}</h1>
       <p>{props.detail}</p>
-      {worksItems}
+      <div className="items">{worksItems}</div>
     </div>
   );
 }
 
 const WorksPage = () => {
   const worksLists = GetDataJson("works").map((data, i) => (
-    <div key={"worksList"+i}>{worksList(data)}</div>
+    <div key={"worksList"+i}>{worksList(data, i)}</div>
   ))
 
   return (

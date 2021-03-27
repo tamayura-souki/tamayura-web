@@ -33,6 +33,7 @@ const GetDataJson = key => {
               link
               description
               image
+              has_dist
             }
           }
           stamps {
