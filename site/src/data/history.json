@@ -151,6 +151,36 @@
             "text": "InterruptRadio",
             "detail": "技術系ラジオ番組",
             "link": "https://youtu.be/8H4-0iJY3Uw"
+        },
+        {
+            "date": "2020-09-18",
+            "text": "指示厨プログラミング",
+            "detail": "マジできつかった",
+            "link": "https://youtu.be/IV4pzHQJOk8"
+        },
+        {
+            "date": "2020-12-22",
+            "text": "コーディング面接",
+            "detail": "脳みそガチガチ",
+            "link": "https://youtu.be/vWnlygOrxHo"
+        },
+        {
+            "date": "2020-01-03",
+            "text": "エンジニアAmongUs",
+            "detail": "デスマーチ",
+            "link": "https://youtu.be/YiUSSNTL_zs"
+        },
+        {
+            "date": "2020-02-17",
+            "text": "開けろイト・不満",
+            "detail": "デトロイト",
+            "link": "https://youtu.be/8tCq0_J4xfM"
+        },
+        {
+            "date": "2020-03-02",
+            "text": "Rust入門",
+            "detail": "連続配信",
+            "link": "https://youtu.be/mCOrTlR1Vdo"
         }
     ]
 }
