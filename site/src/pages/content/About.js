@@ -1,46 +1,73 @@
-import React from "react"
+import * as React from "react"
+import PropTypes from "prop-types"
+import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../../components/layout/layout"
-import GetDataJson from "../../utils/getDataJson"
-import Image from "../../components/image"
+import Layout from "../../components/Layout/Layout"
+import ProfileData from "../../content/about.json"
 
-import "../../styles/about.css"
+import "../../style/pages/content/about.scss"
 
-const aboutTable = props => {
-  const aboutRows = props.table.map((data, i) => (
-    <tr className="aboutRow" key={"aboutRow" + i}>
-      <td className="key">{data.key}</td>
-      <td className="sep">:</td>
-      <td>
-        <div className="value">{data.value}</div>
-        <div className="detail">{data.detail}</div>
-      </td>
-    </tr>
-  ))
+const ProfileRow = ({ profileKey, profileValue, profileDetail }) => (
+  <tr className="profile-row">
+    <td className="key">{profileKey}</td>
+    <td className="sep">:</td>
+    <td>
+      <div className="value">{profileValue}</div>
+      <div className="detail">{profileDetail}</div>
+    </td>
+  </tr>
+)
 
-  return (
-    <div className="aboutTable">
-      <h2>{props.caption}</h2>
-      <table>
-        <tbody>{aboutRows}</tbody>
-      </table>
+ProfileRow.propTypes = {
+  profileKey: PropTypes.string.isRequired,
+  profileValue: PropTypes.string.isRequired,
+  profileDetail: PropTypes.string.isRequired,
+}
+
+const ProfileTable = ({ caption, table }) => (
+  <div className="profile-table">
+    <h2>{caption}</h2>
+    <table>
+      <tbody>
+        {
+          table.map((data, i) => (
+            <ProfileRow
+              key={"profile-row"+i}
+              profileKey={data.key}
+              profileValue={data.value}
+              profileDetail={data.detail}
+            />
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+)
+
+ProfileTable.propTypes = {
+  caption: PropTypes.string.isRequired,
+  table: PropTypes.arrayOf(PropTypes.exact({
+    key: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    detail: PropTypes.string.isRequired,
+  })).isRequired,
+}
+
+const AboutPage = () => (
+  <Layout title="About" topPoem="私のこと" bottomPoem="仲良くしてくださいね">
+    <div className="char-image">
+      <StaticImage src="../../images/standing1.png" alt="souki"/>
     </div>
-  )
-}
-
-const AboutPage = () => {
-  const aboutTables = GetDataJson("about").map((data, i) => (
-    <div key={"aboutTable" + i}>{aboutTable(data)}</div>
-  ))
-
-  return (
-    <Layout title="About" topPoem="私のこと" bottomPoem="仲良くしてくださいね">
-      <div id="charImage">
-        <Image filename="standing1.png" />
-      </div>
-      <div id="aboutTables">{aboutTables}</div>
-    </Layout>
-  )
-}
+    <div className="profile-tables">
+      {
+        ProfileData.map((data, i) => (
+          <div key={"profile-table"+i}>{
+            <ProfileTable caption={data.caption} table={data.table}/>
+          }</div>
+        ))
+      }
+    </div>
+  </Layout>
+)
 
 export default AboutPage

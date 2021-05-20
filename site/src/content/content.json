@@ -1,0 +1,27 @@
+[
+    {
+        "name" : "About",
+        "path" : "/content/About",
+        "description" : "珠響そうきについて"
+    },
+    {
+        "name" : "History",
+        "path" : "/content/History",
+        "description" : "珠響そうきの足あと"
+    },
+    {
+        "name" : "Works",
+        "path" : "/content/Works",
+        "description" : "お手製おもちゃ箱"
+    },
+    {
+        "name" : "Stamps",
+        "path" : "/content/Stamps",
+        "description" : "刹那の気持ち"
+    },
+    {
+        "name" : "Links",
+        "path" : "/content/Links",
+        "description" : "広がる世界"
+    }
+]

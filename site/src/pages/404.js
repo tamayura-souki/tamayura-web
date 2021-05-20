@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout/layout"
+import Layout from "../components/Layout/Layout"
 
 const NotFoundPage = () => (
   <Layout title="404: Not found" topPoem="戻ったほうがいい" bottomPoem="こんな所まで来やがって">

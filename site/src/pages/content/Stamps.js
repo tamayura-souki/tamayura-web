@@ -1,32 +1,25 @@
-import React from "react"
+import * as React from "react"
 
-import Layout from "../../components/layout/layout"
-import GetDataJson from "../../utils/getDataJson"
-import Image from "../../components/image"
+import Layout from "../../components/Layout/Layout"
+import Image from "../../components/Image/Image"
+import StampsData from "../../content/stamps.json"
+import "../../style/pages/content/stamps.scss"
 
-import "../../styles/stamps.css"
-
-const stampsList = props => {
-  return (
-    <div>
-      <Image filename={props.path}/>
+const StampsPage = () => (
+  <Layout title="Stamps" topPoem="SNS等で" bottomPoem="お好きにどうぞ">
+    <p>Twitter などで雑に使ってやってください。</p>
+    <p>あくまで、スタンプ用途にのみご使用ください。</p>
+    <p><a href="https://tamayura-souki.booth.pm/items/2845876">Boothでも配布中</a></p>
+    <div className="stamps-list">
+      {
+        StampsData.map((data, i)=>(
+          <div className="stamps-item" key={"stamp"+i}>
+            <Image filename={data.path}/>
+          </div>
+        ))
+      }
     </div>
-  );
-}
+  </Layout>
+)
 
-const WorksPage = () => {
-  const stampsLists = GetDataJson("stamps").map((data, i) => (
-    <div className="stampsItem" key={"stamp"+i}>{stampsList(data)}</div>
-  ))
-
-  return (
-    <Layout title="Stamps" topPoem="SNS等で" bottomPoem="お好きにどうぞ">
-      <p>Twitter などで雑に使ってやってください。</p>
-      <p>あくまで、スタンプ用途にのみご使用ください。</p>
-      <p><a href="https://tamayura-souki.booth.pm/items/2845876">Boothでも配布中</a></p>
-      <div id="stampslist">{stampsLists}</div>
-    </Layout>
-  )
-}
-
-export default WorksPage
+export default StampsPage

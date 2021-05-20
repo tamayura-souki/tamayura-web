@@ -1,45 +1,55 @@
-import React from "react"
+import * as React from "react"
+import PropTypes from "prop-types"
 
-import Layout from "../../components/layout/layout"
-import GetDataJson from "../../utils/getDataJson"
+import Layout from "../../components/Layout/Layout"
+import HistoryData from "../../content/history.json"
 
-import "../../styles/history.css"
+import "../../style/pages/content/history.scss"
 
-const historyRow = (props, i) => {
-  var date = props.date
-  if (props.date2) date = (<>{date} ~ <br/> {props.date2} </>)
-
-  var text = (
+const HistoryRow = ({ date, date2, caption, detail, link }) => {
+  if (date2) date = (<>{date} ~ <br/> {date2} </>)
+  let text = (
     <>
-      <div className="text">{props.text}</div>
-      <div className="detail">{props.detail}</div>
+      <div className="caption">{caption}</div>
+      <div className="detail">{detail}</div>
     </>
   )
-
-  if(props.link) {
-    text = (<a href={props.link}>{text}</a>)
-  }
-
+  if(link) text = (<a href={link}>{text}</a>)
   return (
-    <tr className="historyRow" key={"historyRow" + i}>
+    <tr className="history-row">
       <td className="date">{date}</td>
       <td>{text}</td>
     </tr>
   )
 }
 
-const HistoryPage = () => {
-  const historyTable = GetDataJson("history").map((data, i) => historyRow(data, i)).reverse()
-
-  return (
-    <Layout title="History" topPoem="これまでのこと" bottomPoem="遠くまできたね">
-      <table id="historyTable">
-        <tbody>
-          {historyTable}
-        </tbody>
-      </table>
-    </Layout>
-  )
+HistoryRow.propTypes = {
+  date: PropTypes.string.isRequired,
+  date2: PropTypes.string,
+  caption: PropTypes.string.isRequired,
+  detail: PropTypes.string.isRequired,
+  link: PropTypes.string,
 }
+
+const HistoryPage = () => (
+  <Layout title="History" topPoem="これまでのこと" bottomPoem="遠くまできたね">
+    <table className="history-table">
+      <tbody>
+        {
+          HistoryData.map((data, i) => (
+            <HistoryRow
+              key={"hitory-row"+i}
+              date={data.date}
+              date2={data.date2}
+              caption={data.caption}
+              detail={data.detail}
+              link={data.link}
+            />
+          )).reverse()
+        }
+      </tbody>
+    </table>
+  </Layout>
+)
 
 export default HistoryPage

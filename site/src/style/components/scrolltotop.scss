@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+
+.scroll-to-top {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  width: 100vw;
+
+  margin: 0px 0px;
+  padding: 3px;
+
+  color: transparent;
+  text-align: center;
+  text-decoration: none;
+
+  border: 0px;
+  background-color: transparent;
+
+  transition: 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $background-color;
+    background-color: $main-color;
+  }
+}

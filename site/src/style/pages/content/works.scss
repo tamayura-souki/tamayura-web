@@ -1,0 +1,115 @@
+@import "../../abstracts/variables";
+
+$shadow-color: gray;
+
+.works-lists {
+  max-width: 800px;
+  width: 80%;
+  margin: 0px auto 0px;
+  padding: 0px;
+
+  .work-list {
+    width: 100%;
+    text-align: left;
+    margin: 15px 0px 70px 0px;
+
+    * {text-decoration: none;}
+    h1 {margin: 0px;}
+    p {margin: 10px 2rem;}
+  }
+}
+
+.items {
+  width: 100%;
+  margin: 0px 0px 0px 2rem;
+  padding: 0px;
+
+  .noimage-item {
+    position: relative;
+    margin: 0px;
+    padding: 10px 5px;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid;
+      filter: drop-shadow(5px 5px 5px $shadow-color);
+    }
+  }
+
+  .image-item {
+    vertical-align: bottom;
+
+    width: 14.5rem;
+    height: 14.5rem;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: inline-block;
+    position: relative;
+
+    border: 1px solid transparent;
+
+    overflow: hidden;
+    filter: drop-shadow(3px 3px 1px transparent);
+
+    h3 {
+      margin: 50px 15px 10px;
+      filter: drop-shadow(0px 0px 2px $background-color);
+    }
+    p {
+      margin: 20px 8px;
+      font-weight: bold;
+    }
+    .image-front {
+      opacity: 0;
+    }
+    .back-image {
+      width: 96%;
+
+      position: absolute;
+      top: 0%;
+      left: 2%;
+
+      filter: blur(0px);
+      opacity: 1;
+    }
+
+    &:hover {
+      border: 1px solid;
+      filter: drop-shadow(3px 3px 1px $shadow-color);
+      .image-front {
+        opacity: 1;
+      }
+      .back-image {
+        filter: blur(5px);
+        opacity: 0.1;
+      }
+    }
+  }
+}
+
+.link-badge {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 8px;
+  color: $main-color;
+
+  font-size: small;
+  font-family: serif;
+  padding: 0px 6px;
+  border:solid 1px;
+  border-radius: 50px;
+}
+
+.dist-badge {
+  position: absolute;
+  bottom: 2.4rem;
+  right: 8px;
+  color: $accent-color;
+
+  font-size: small;
+  font-family: serif;
+  padding: 0px 6px;
+  border:solid 1px;
+  border-radius: 50px;
+}
