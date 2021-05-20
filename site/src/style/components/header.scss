@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+
+header {
+  margin-bottom: 1.45rem;
+  * {
+    margin: auto;
+  }
+  .logo {
+    max-width: 600px;
+    padding: 30px 0px 10px;
+  }
+
+  .nav-link {
+    padding: 2vw 5vw;
+
+    font-size: x-large;
+    font-family: sans-serif;
+    text-decoration: none;
+
+    display: inline-block;
+
+    transition-duration: 0.2s;
+
+    &:hover {
+      color: $accent-color;
+      &::before, &::after {
+        color: $main-color;
+      }
+    }
+    &::before, &::after {
+      content: "†";
+      transition-duration: 0.2s;
+      color: transparent;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../abstracts/variables";
+
+$main-color: aliceblue;
+$background-color: #080808;
+
+#dark {
+  background-color: $background-color;
+
+  .poem {
+    color: $main-color;
+    a {
+      color: $main-color;
+    }
+  }
+
+  p {
+    margin: 50px;
+    line-height: 200%;
+    font-family: serif;
+    font-style: oblique;
+
+    color: $background-color;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .magic-image {
+    margin: auto;
+    width: 72rem;
+    height: 72rem;
+    max-width: 500px;
+    max-height: 500px;
+
+    display: inline-block;
+    position: relative;
+
+    .magic-front {
+      width: 88%;
+      position: absolute;
+      top: 6%;
+      left: 6%;
+      opacity: 0;
+    }
+    .magic-back {
+      width: 100%;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      filter: brightness(1.5);
+    }
+
+    &:hover {
+      .magic-front { opacity: 1.0; }
+      .magic-back { opacity: 0.0; }
+    }
+  }
+}

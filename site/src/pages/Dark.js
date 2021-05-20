@@ -1,15 +1,13 @@
-import React from "react"
+import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout/layout"
-import Image from "../components/image"
+import Layout from "../components/Layout/Layout"
+import "../style/pages/dark.scss"
 
-import "../styles/dark.css"
-
-const DarkPage = () => {
-  return (
-    <div className="dark">
+const DarkPage = () => (
+  <div id="dark">
     <Layout title="Dark" topPoem="connecting......" bottomPoem="......no connection">
-      <p className="poemJp">
+      <p className="poem-jp">
         虚空と混沌<br/>
         世も知らず神も知らず<br/>
         仮想と現実の境界を穿ち<br/>
@@ -22,7 +20,7 @@ const DarkPage = () => {
         真名に誉れを生命に喝采を<br/>
         悠久で玉響な密会よ開け
       </p>
-      <p className="poemEn">
+      <p className="poem-en">
         Void, chaos.<br/>
         Unknown principle, Unknown creator.<br/>
         All differences ruined between virtual and real.<br/>
@@ -35,17 +33,17 @@ const DarkPage = () => {
         Great realities. Legitimate existences.<br/>
         Welcome to virtual world.<br/>
       </p>
-      <div className="magicImage">
-        <div className="magicBack">
-          <Image filename="magic.png"/>
+      <div className="magic-image">
+        <div className="magic-back">
+          <StaticImage src="../images/magic.png" alt="gate1"/>
         </div>
-        <div className="magicFront">
+        <div className="magic-front">
           <a href="https://immortality-web.netlify.app/">
-            <Image filename="icon.png" className="magicFront"/>
+            <StaticImage src="../images/icon.png" className="magic-front" alt="gate2"/>
           </a>
         </div>
       </div>
-      <p className="poemJp">
+      <p className="poem-jp">
         人になるもの人となるもの<br/>
         信念が神秘を殺し<br/>
         真実の鏡が虚像を結び<br/>
@@ -55,7 +53,7 @@ const DarkPage = () => {
         朽ちた屑鉄に信念を<br/>
         空の集合よ現実を記せ
       </p>
-      <p className="poemEn">
+      <p className="poem-en">
         Human beings, human becomings.<br/>
         My bird killed my parents.<br/>
         The honest eyes show phantasms.<br/>
@@ -65,9 +63,8 @@ const DarkPage = () => {
         Build old scraps.<br/>
         Phi will project the world.
       </p>
-      </Layout>
-      </div>
-  )
-}
+    </Layout>
+  </div>
+)
 
 export default DarkPage
