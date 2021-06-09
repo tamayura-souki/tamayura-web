@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+
+.link-button {
+  display: inline-block;
+  margin: 10px;
+
+  * {
+    display: inline;
+    text-decoration: none;
+  }
+  .text {
+    font-size: larger;
+  }
+  .bracket-l, .bracket-r {
+    font-size: x-large;
+  }
+  .bracket-l {
+    margin-right: 1.2rem;
+  }
+  .bracket-r {
+    margin-left: 1.2rem;
+  }
+
+  &:hover {
+    .text, .detail {
+      opacity: 0.3;
+    }
+  }
+}
