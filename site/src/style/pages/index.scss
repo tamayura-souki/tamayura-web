@@ -58,7 +58,11 @@
       color: $background-color;
       font-size: large;
     }
-
+    &:visited {
+      .description {
+        color: $main-color;
+      }
+    }
     &:hover {
       .link-view {
         border-radius: 2px;
@@ -75,12 +79,7 @@
         color: $background-color;
       }
     }
-    &:visited {
-      .description {
-        color: $main-color;
-      }
-    }
-  }
+ }
 
   .link-view {
     margin: 10px 0px;
