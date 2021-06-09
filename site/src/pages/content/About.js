@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../../components/Layout/Layout"
+import LinkButton from "../../components/LinkButton/LinkButton"
 import ProfileData from "../../content/about.json"
 
 import "../../style/pages/content/about.scss"
@@ -66,6 +67,17 @@ const AboutPage = () => (
           }</div>
         ))
       }
+    </div>
+    <div className="center">
+      <div className="flavor-text">
+        魔術世界からバーチャル世界へSSH！ <br/>
+        情報系Vtuberの珠響そうきです！ <br/>
+        ウィザード目指して勉強中！ <br/>
+      </div>
+    </div>
+    <div className="buttons">
+      <LinkButton to="https://youtu.be/bNrUK334gI0" text="自己紹介動画へ"/>
+      <LinkButton to="/guidelines" text="ガイドラインへ"/>
     </div>
   </Layout>
 )
