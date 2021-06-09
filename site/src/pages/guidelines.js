@@ -10,7 +10,7 @@ const GuidelinesPage = () => (
     topPoem="お願い"
     bottomPoem="あなたと私の約束"
   >
-    <div id="guidelines">
+    <div className="guidelines">
       <h1>配信を見る上での注意</h1>
       <ul>
         <li>他の人が不快になるようなコメントは避けてください</li>
