@@ -1,0 +1,19 @@
+@import "../abstracts/variables";
+
+#guidelines {
+  margin: auto;
+  max-width: 800px;
+  text-align: left;
+
+  h1 {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  li {
+    margin-left: 2rem;
+  }
+}
