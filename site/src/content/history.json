@@ -163,21 +163,75 @@
         "link": "https://youtu.be/vWnlygOrxHo"
     },
     {
-        "date": "2020-01-03",
+        "date": "2021-01-03",
         "caption": "エンジニアAmongUs",
         "detail": "デスマーチ",
         "link": "https://youtu.be/YiUSSNTL_zs"
     },
     {
-        "date": "2020-02-17",
+        "date": "2021-02-17",
         "caption": "開けろイト・不満",
         "detail": "デトロイト",
         "link": "https://youtu.be/8tCq0_J4xfM"
     },
     {
-        "date": "2020-03-02",
+        "date": "2021-03-02",
         "caption": "Rust入門",
         "detail": "連続配信",
         "link": "https://youtu.be/mCOrTlR1Vdo"
+    },
+    {
+        "date": "2021-04-01",
+        "caption": "活動2周年自己紹介動画",
+        "detail": "Just for fun",
+        "link": "https://youtu.be/bNrUK334gI0"
+    },
+    {
+        "date": "2021-04-25",
+        "caption": "KusoKoudoKaigi4",
+        "detail": "春のクソコード祭り",
+        "link": "https://youtu.be/WhXQvch3cXU"
+    },
+    {
+        "date": "2021-05-17",
+        "caption": "プログラマの基礎教養配信",
+        "detail": "知らないと恥ずかしい?",
+        "link": "https://youtu.be/StghRh05Xvg"
+    },
+    {
+        "date": "2021-07-31",
+        "caption": "素晴らしきお誕生日配信",
+        "detail": "幸福に生きよ",
+        "link": "https://youtu.be/xRTi7jigR-Q"
+    },
+    {
+        "date": "2021-08-12",
+        "caption": "夏休み子どもITマシュマロ相談",
+        "detail": "インターネットはいつからあるんですか？",
+        "link": "https://youtu.be/wYS2Wq7nwDk"
+    },
+    {
+        "date": "2021-09-27",
+        "caption": "3回まわってワンッと鳴くコード",
+        "detail": "#shortsってやつ",
+        "link": "https://youtu.be/vKQjnleuym8"
+    },
+    {
+        "date": "2021-10-02",
+        "caption": "エンジニアっぽいワードでコードネームオンライン",
+        "detail": "ご無礼積みです",
+        "link": "https://youtu.be/qmKJvghRtrc"
+    },
+    {
+        "date": "2022-02-21",
+        "caption": "そうきちゃんv7",
+        "detail": "真なるそうきちゃんに近づいた",
+        "link": "https://youtu.be/wW7JtTQS-YU"
+    },
+    {
+        "date": "2022-03-06",
+        "caption": "言語処理100本ノック",
+        "detail": "自然言語処理の修行じゃ",
+        "link": "https://youtu.be/kZszEE2uvOE"
     }
 ]
