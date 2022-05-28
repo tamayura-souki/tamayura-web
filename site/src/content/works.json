@@ -38,7 +38,7 @@
             {"name" : "Avatar4", "link" : "https://hub.vroid.com/characters/7198604267677814568/models/8595257850741979184", "description" : "Vroidで錬成した", "image" : "avatar4.png", "has_dist":true},
             {"name" : "珠響すいこ", "link" : "", "description" : "何者？", "image" : "suiko.png", "has_dist":false},
             {"name" : "Avatar5", "link" : "", "description" : "Live2Dでごにょごにょ", "image" : "avatar5.png", "has_dist":false},
-            {"name" : "Avatar6", "link" : "", "description" : "Vroidで錬成した奇跡の体", "image" : "avatar6.png", "has_dist":false},
+            {"name" : "Avatar6", "link" : "https://hub.vroid.com/characters/2562618600082012895/models/1551932730694150225", "description" : "Vroidで錬成した奇跡の体", "image" : "avatar6.png", "has_dist":true},
             {"name" : "Avatar7", "link" : "", "description" : "Vroidで錬成した真の体", "image" : "avatar7.png", "has_dist":false}
         ]
     },
