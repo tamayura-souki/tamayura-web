@@ -1,5 +1,19 @@
 @import "../abstracts/variables";
 
+#announce {
+  margin: 2rem auto;
+  width: max-content;
+  max-width: fit-content;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: $main-color;
+  font-weight: 600;
+
+  h3, a, p {
+    color: aliceblue;
+  }
+}
+
 .poem {
   border-top: 1px solid;
   border-bottom: 1px solid;
